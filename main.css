@@ -1,0 +1,205 @@
+/* start reset default styles */
+
+@font-face {
+  font-family: "sans";
+  src: url(./font/IRAN\ Sans.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* end of reset browser styles --------------------------------------------------------------------- */
+
+/* start responsive page */
+
+@media screen and (max-width: 665px) {
+  .container {
+    max-width: 96%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  .h {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-items: center;
+    gap: 2px;
+    justify-content: space-around;
+  }
+  .h a {
+    width: 5rem;
+    height: 5rem;
+  }
+  .h img {
+    width: 100%;
+  }
+
+  .rt {
+    /*the big one image*/
+    grid-row: auto/span 1;
+    grid-column: auto/span 1;
+    width: 106%;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .container {
+    max-width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .h {
+    justify-items: center;
+    gap: 2px;
+    justify-content: space-around;
+  }
+  body {
+    font-size: 14px;
+  }
+
+  .l-p-w {
+    gap: 2%;
+    grid-template-columns: 2fr 2fr 0fr;
+    padding: 0px;
+  }
+
+  .w {
+    grid-column: div -2;
+    width: 200%;
+    margin-bottom: 30px;
+  }
+
+  .p {
+    border-left: none;
+  }
+  .rt {
+    /*the big one image*/
+    grid-row: auto/span 1;
+    grid-column: auto/span 1;
+    width: 106%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .h-n {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .n {
+    display: none;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .h-n {
+    justify-content: space-between;
+  }
+  .h a {
+    width: 10rem;
+    height: 10rem;
+    font-size: 2.2rem;
+  }
+  .rt {
+    /*the big one image*/
+    grid-row: auto/span 1;
+    grid-column: auto/span 1;
+    width: 106%;
+  }
+}
+/* end of start responsive page --------------------------------------------------------------------- */
+
+/* start loading page */
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut ease 2s;
+  -webkit-animation: fadeOut ease 2s;
+  -moz-animation: fadeOut ease 2s;
+  -o-animation: fadeOut ease 2s;
+  -ms-animation: fadeOut ease 2s;
+}
+
+#load {
+  top: -8%;
+  background: url("./img/5.gif") no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+  animation: fadeOut ease 3s;
+  -webkit-animation: fadeOut ease 3s;
+  -moz-animation: fadeOut ease 3s;
+  -o-animation: fadeOut ease 3s;
+  -ms-animation: fadeOut ease 3s;
+}
+
+/* end of loading page---------------------------------------------------------------------- */
+
+/* start canvas */
+
+canvas {
+  top: 0px;
+  z-index: -1;
+  position: fixed;
+  filter: blur(3px);
+  margin: 0px;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* end of canvas --------------------------------------------------------------------------- */

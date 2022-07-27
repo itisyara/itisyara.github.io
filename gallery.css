@@ -1,0 +1,49 @@
+/* start galery shape pages */
+
+.container2 {
+  display: grid;
+  margin-right: 15%;
+  margin-left: 15%;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-auto-rows: auto;
+  gap: 1rem;
+  margin: 1em;
+  grid-auto-flow: dense;
+}
+
+.container2 > div img {
+  border-radius: 25px;
+  border: 0.5px solid gold;
+  width: 89.5%;
+  height: auto;
+  transition: 0.5s;
+}
+.container2 > div img:hover {
+  filter: brightness(150%);
+}
+
+.rt {
+  /*the big one image*/
+  grid-row: auto/span 2;
+  grid-column: auto/span 2;
+  width: 106%;
+}
+
+.container2 div {
+  position: relative;
+}
+
+.content-image {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  left: 2%;
+  width: 85%;
+  background-color: #00000085;
+  bottom: 1.4rem;
+  color: white;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+/* end of galery shape pages--------------------------------------------------------------------- */
