@@ -22,7 +22,7 @@
   filter: brightness(150%);
 }
 
-.rt {
+#rt {
   /*the big one image*/
   grid-row: auto/span 2;
   grid-column: auto/span 2;

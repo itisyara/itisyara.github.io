@@ -31,21 +31,18 @@ html {
     margin-left: 2%;
   }
   .h {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    justify-items: center;
-    gap: 2px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .h a {
     width: 5rem;
     height: 5rem;
+    font-size: 1rem;
   }
   .h img {
     width: 100%;
   }
 
-  .rt {
+  #rt {
     /*the big one image*/
     grid-row: auto/span 1;
     grid-column: auto/span 1;
@@ -83,7 +80,7 @@ html {
   .p {
     border-left: none;
   }
-  .rt {
+  #rt {
     /*the big one image*/
     grid-row: auto/span 1;
     grid-column: auto/span 1;
@@ -97,7 +94,15 @@ html {
     justify-content: space-around;
   }
   .n {
-    display: none;
+    display: flex;
+    z-index: -1;
+    position: fixed;
+    margin-top: 80%;
+    left: -150px;
+    transform: rotate(90deg);
+  }
+  .img_dis {
+    left: 20px;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -109,7 +114,7 @@ html {
     height: 10rem;
     font-size: 2.2rem;
   }
-  .rt {
+  #rt {
     /*the big one image*/
     grid-row: auto/span 1;
     grid-column: auto/span 1;
