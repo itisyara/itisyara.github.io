@@ -297,3 +297,12 @@ h4 {
   filter: brightness(150%);
   transition: 0.5s;
 }
+
+.book-li{
+  color: white;
+}
+.book-li a{
+  color: rgba(229, 255, 0, 0.877);
+  font-size: .5em;
+  line-height: 3em;
+}

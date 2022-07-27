@@ -187,7 +187,7 @@ window.addEventListener("scroll", function (e) {
     document.querySelector(".back-to-home").style.cssText = `
     opacity:.6;
     top:45%;
-    right:-21px;
+    right:-75px;
     position: fixed;
     z-index: 777;
     margin-top: 0px;
