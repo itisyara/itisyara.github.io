@@ -25,10 +25,37 @@ html {
 /* start responsive page */
 
 @media screen and (max-width: 665px) {
+  .p {
+    display: none;
+  }
+  .w {
+    grid-row-start: 1;
+    min-width: 90%;
+    justify-content: left;
+    padding-right: 2%;
+  }
+
+  .w img {
+    width: 55%;
+  }
+  .w p {
+    width: 55%;
+  }
+  .l {
+    grid-row-start: 2;
+    text-align: center;
+  }
+  .back-to-home {
+    right: 40%;
+  }
   .container {
     max-width: 96%;
     margin-right: 2%;
     margin-left: 2%;
+  }
+  .l-p-w {
+    display: grid;
+    grid-column: -1/1;
   }
   .h {
     justify-content: space-between;
@@ -89,7 +116,7 @@ html {
   .back-to-home {
     opacity: 1;
     top: 9%;
-    right: 37%;
+    right: 43%;
     position: fixed;
     z-index: 777;
     margin-top: 0px;
